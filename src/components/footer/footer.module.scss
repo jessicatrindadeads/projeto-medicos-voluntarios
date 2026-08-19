@@ -90,22 +90,18 @@
 
 @media (max-width: 768px) {
   .footer {
-    padding: 4vh 6vw;
+    padding: 3rem 5vw;
   }
 
   .footerTop {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2rem;
+    flex-direction: column;
+    gap: 1.75rem;
   }
 
-  .boxLogo {
-    width: 48%;
-  }
-
+  .boxLogo,
   .boxContato {
-    width: 48%;
+    width: 100%;
+    min-width: 0;
   }
 
   .boxContato .item {
@@ -114,6 +110,7 @@
 
   .boxRedes {
     width: 100%;
+    min-width: 0;
   }
 
   .direitos {
@@ -122,12 +119,5 @@
     padding-top: 1rem;
     text-align: center;
     font-size: 0.75rem;
-  }
-}
-
-@media (max-width: 360px) {
-  .boxLogo,
-  .boxContato {
-    width: 100%;
   }
 }

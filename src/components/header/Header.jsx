@@ -58,7 +58,6 @@ const Header = () => {
         aria-label="Navegação principal"
       >
         <Link to="/" onClick={fecharMenu}>Home</Link>
-        <Link to="/como-ajudar" onClick={fecharMenu}>Como ajudar</Link>
         <Link to="/voluntario" onClick={fecharMenu}>Seja voluntário</Link>
       </nav>
     </header>

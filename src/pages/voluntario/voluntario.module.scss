@@ -177,21 +177,21 @@
   .boxCardsVoluntario {
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
 
     article {
       flex: none;
       width: 100%;
       max-width: none;
-      min-height: 9rem;
-      padding: 1.75rem 1.5rem;
+      min-height: 0;
+      padding: 1.5rem;
 
       h3 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
       }
 
       p {
-        font-size: 1rem;
+        font-size: 0.95rem;
       }
     }
   }

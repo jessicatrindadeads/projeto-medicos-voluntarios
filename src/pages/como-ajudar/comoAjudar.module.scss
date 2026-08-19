@@ -43,12 +43,12 @@
 
 @media (max-width: 768px) {
   .container {
-    padding: 6vh 6vw;
+    padding: 3rem 5vw;
   }
 
   .header {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 
     h1 {
       font-size: 2rem;
@@ -61,12 +61,13 @@
 
   .cards {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
 
     article {
-      padding: 2rem;
+      flex: none;
+      width: 100%;
+      padding: 1.5rem;
       text-align: center;
     }
   }
 }
-

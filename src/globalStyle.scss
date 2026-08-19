@@ -7,3 +7,31 @@
     text-decoration: none;
     font-family: "Inter", sans-serif;
 }
+
+body {
+    min-width: 20rem;
+    min-height: 100vh;
+    background: #fff;
+    color: #111;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+a,
+button {
+    transition: opacity 0.2s ease, background-color 0.2s ease;
+}
+
+a:hover,
+button:hover {
+    opacity: 0.85;
+}
+
+:focus-visible {
+    outline: 3px solid #f3b61f;
+    outline-offset: 3px;
+}

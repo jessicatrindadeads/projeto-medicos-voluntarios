@@ -153,10 +153,65 @@
   .section {
     flex-direction: column;
     text-align: center;
+    min-height: auto;
+    padding: 2.5rem 5vw;
+    gap: 2rem;
+
+    .conteudo {
+      h1 {
+        font-size: 2.25rem;
+        margin: 1.25rem 0;
+      }
+
+      p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+      }
+    }
   }
 
   .buttons {
     justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .doutorImgBox,
+  .doutorImgBox img {
+    display: block;
+    width: 100%;
+  }
+
+  .sectionMissao,
+  .sectionImpacto {
+    padding: 3rem 5vw;
+
+    .missao,
+    .impacto {
+      margin-bottom: 2rem;
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .sectionMissao .boxCards,
+  .sectionImpacto .boxCardsImpacto {
+    gap: 1rem;
+
+    article {
+      flex-basis: 100%;
+      max-width: none;
+      padding: 1.5rem;
+    }
+  }
+
+  .sectionImpacto .boxCardsImpacto article h3 {
+    font-size: 2.25rem;
   }
 }
-

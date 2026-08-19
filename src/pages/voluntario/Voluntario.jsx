@@ -1,11 +1,20 @@
+import { useState } from 'react'
 import s from './voluntario.module.scss'
 
-const Vonluntario = () => {
+const Voluntario = () => {
+  const [enviado, setEnviado] = useState(false)
+
+  const enviarInscricao = (event) => {
+    event.preventDefault()
+    event.currentTarget.reset()
+    setEnviado(true)
+  }
+
   return (
     <main>
           <section className={s.sectionVoluntario}>
             <div className={s.voluntario}> 
-            <h2>Seja Voluntário</h2>
+            <h1>Seja Voluntário</h1>
             <p>Junte-se a nós e faça a diferença na vida de pessoas que precisam</p>
             </div>
     
@@ -29,21 +38,37 @@ const Vonluntario = () => {
             <div className={s.inscricao}>
               <h2>Inscrição para Voluntários</h2>
 
-              <form className={s.form}>
+              <form className={s.form} onSubmit={enviarInscricao}>
                 <h3>Dados Pessoais</h3>
 
                 <div className={s.formInscricao}>
-                  <input type="text" placeholder="Seu Nome *" />
-                  <input type="email" placeholder="Seu Email *" />
+                  <div className={s.campo}>
+                    <label htmlFor="nome">Nome</label>
+                    <input id="nome" name="nome" type="text" autoComplete="name" required />
+                  </div>
+                  <div className={s.campo}>
+                    <label htmlFor="email">E-mail</label>
+                    <input id="email" name="email" type="email" autoComplete="email" required />
+                  </div>
                 </div>
 
-                <input className={s.telefone} type="tel" placeholder="Seu Telefone *" />
+                <div className={`${s.campo} ${s.telefone}`}>
+                  <label htmlFor="telefone">Telefone</label>
+                  <input id="telefone" name="telefone" type="tel" autoComplete="tel" required />
+                </div>
 
-                <h3>Mensagem Adicional</h3>
+                <div className={s.campo}>
+                  <label htmlFor="mensagem">Mensagem adicional</label>
+                  <textarea id="mensagem" name="mensagem" placeholder="Conte por que você quer ser voluntário" />
+                </div>
 
-                <textarea placeholder="Conte-nos porque você quer ser voluntário..."  />
+                <p className={s.mensagem}>Entraremos em contato para mais informações.</p>
 
-                <p className={s.mensagem}> Entraremos em contato para mais informações </p>
+                {enviado ? (
+                  <p className={s.sucesso} role="status">
+                    Inscrição registrada nesta demonstração. Obrigada pelo interesse!
+                  </p>
+                ) : null}
 
                 <button type="submit">Enviar Inscrição</button>
                 
@@ -56,4 +81,4 @@ const Vonluntario = () => {
   )
 }
 
-export default Vonluntario
+export default Voluntario

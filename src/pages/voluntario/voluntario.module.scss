@@ -14,10 +14,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;  
-  font-style: bold;
   color: #000000;
 
-  h2 {
+  h1 {
     font-size: 2.75rem;
     font-weight: 700;
     margin-bottom: 1rem;    
@@ -114,6 +113,18 @@
   gap: 1.25rem;
 }
 
+.campo {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  label {
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+}
+
 .telefone {
   margin-top: 1rem;
 }
@@ -124,6 +135,15 @@
   font-size: 0.875rem;
 }
 
+.sucesso {
+  padding: 0.875rem;
+  border-radius: 0.5rem;
+  background: #e5f6f1;
+  color: #075a49;
+  text-align: center;
+  font-weight: 600;
+}
+
 @media (max-width: 48rem) {
   .sectionVoluntario {
     padding: 3rem 5vw;
@@ -131,7 +151,7 @@
   }
 
   .voluntario {
-    h2 {
+    h1 {
       font-size: 2.2rem;
     }
 
@@ -189,4 +209,3 @@
     }
   }
 }
-

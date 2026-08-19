@@ -2,6 +2,8 @@
 
 [![CI](https://github.com/jessicatrindadeads/projeto-medicos-voluntarios/actions/workflows/ci.yml/badge.svg)](https://github.com/jessicatrindadeads/projeto-medicos-voluntarios/actions/workflows/ci.yml)
 
+🔗 **Aplicação publicada:** [projeto-medicos-voluntarios.vercel.app](https://projeto-medicos-voluntarios.vercel.app)
+
 Interface responsiva de uma iniciativa comunitária fictícia voltada ao atendimento médico e odontológico voluntário. O projeto apresenta informações institucionais, formas de contribuição e um formulário demonstrativo de inscrição de profissionais.
 
 > Este é um projeto educacional. Os nomes, contatos, indicadores e registros exibidos são fictícios e não representam uma instituição em atividade.

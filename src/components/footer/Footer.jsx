@@ -1,6 +1,6 @@
 import s from './footer.module.scss'
 import Logo from '../../assets/logo.png'
-import Frame from '../../assets/frame.png'
+import Frame from '../../assets/Frame.png'
 import Telefone from '../../assets/telefone.png'
 import Localizacao from '../../assets/localizacao.png'
 
@@ -8,13 +8,13 @@ const Footer = () => {
   return (
     <footer className={s.footer}>
       <div className={s.footerTop}>
-        <div className={s.BoxLogo}>
+        <div className={s.boxLogo}>
           <img src={Logo} alt="Imagem de logo do site Médicos Voluntários" />
           <h2>Médicos & Dentistas</h2>
           <p>Saúde e cuidado sem barreiras para toda comunidade.</p>
         </div>
 
-        <div className={s.BoxContato}>
+        <div className={s.boxContato}>
           <h2>Contato</h2>
 
           <div className={s.item}>
@@ -34,20 +34,19 @@ const Footer = () => {
         </div>
 
 
-        <div className={s.BoxRedes}>
+        <div className={s.boxRedes}>
           <h2>Redes Sociais</h2>
-          <a href="#">Facebook</a>
-          <a href="#">Instagram</a>
-          <a href="#">LinkedIn</a>
+          <p>Facebook</p>
+          <p>Instagram</p>
+          <p>LinkedIn</p>
         </div>
 
         <div className={s.direitos}>
-        © 2025 Médicos e Dentistas pela Comunidade. Todos os direitos reservados.
+          © {new Date().getFullYear()} Projeto demonstrativo para fins educacionais.
         </div>
         
       </div>
 
-      
     </footer>
   )
 }

@@ -146,18 +146,20 @@
 
 @media (max-width: 48rem) {
   .sectionVoluntario {
-    padding: 3rem 5vw;
-    gap: 2.5rem;
+    padding: 2.5rem 5vw;
+    gap: 2rem;
   }
 
   .voluntario {
+    text-align: center;
+
     h1 {
-      font-size: 2.2rem;
+      font-size: 2rem;
     }
 
     p {
       font-size: 0.95rem;
-      max-width: 90%;
+      max-width: 100%;
     }
   }
 
@@ -168,7 +170,7 @@
 
     article {
       width: 100%;
-      max-width: 90%;
+      max-width: none;
       padding: 1.5rem;
 
       h3 {
@@ -182,11 +184,12 @@
   }
 
   .sectionInscricao {
-    padding: 4rem 5vw;
+    min-height: auto;
+    padding: 3rem 5vw;
   }
 
   .inscricao {
-    padding: 2rem 1.5rem;
+    padding: 1.5rem 1rem;
   }
 
   .formInscricao {

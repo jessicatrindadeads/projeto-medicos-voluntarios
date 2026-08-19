@@ -58,6 +58,9 @@
   flex-direction: column;
 
   .missao {
+    width: 100%;
+    max-width: 88rem;
+    margin-inline: auto;
     margin-bottom: 3rem;
 
     h2 {
@@ -74,6 +77,9 @@
   .boxCards {
     display: flex;
     justify-content: center;
+    width: 100%;
+    max-width: 88rem;
+    margin-inline: auto;
     gap: 2rem;
     flex-wrap: wrap;
 
@@ -109,6 +115,9 @@
   flex-direction: column;
 
   .impacto {
+    width: 100%;
+    max-width: 86rem;
+    margin-inline: auto;
     margin-bottom: 3rem;
 
     h2 {
@@ -125,6 +134,9 @@
   .boxCardsImpacto {
     display: flex;
     justify-content: center;
+    width: 100%;
+    max-width: 86rem;
+    margin-inline: auto;
     gap: 2rem;
     flex-wrap: wrap;
 

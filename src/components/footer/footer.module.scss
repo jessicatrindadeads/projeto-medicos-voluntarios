@@ -11,7 +11,7 @@
   flex-wrap: wrap;
 }
 
-.BoxLogo {
+.boxLogo {
   max-width: 20rem;
   width: 100%;
 
@@ -32,7 +32,7 @@
   }
 }
 
-.BoxContato {
+.boxContato {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -61,7 +61,7 @@
   }
 }
 
-.BoxRedes {
+.boxRedes {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
@@ -72,14 +72,9 @@
     margin-bottom: 0.5rem;
   }
 
-  a {
+  p {
     font-size: 0.875rem;
     color: #cfcfcf;
-    text-decoration: none;
-
-    &:hover {
-      color: #00745A;
-    }
   }
 }
 
@@ -105,19 +100,19 @@
     gap: 2rem;
   }
 
-  .BoxLogo {
+  .boxLogo {
     width: 48%;
   }
 
-  .BoxContato {
+  .boxContato {
     width: 48%;
   }
 
-  .BoxContato .item {
+  .boxContato .item {
     justify-content: flex-start;
   }
 
-  .BoxRedes {
+  .boxRedes {
     width: 100%;
   }
 
@@ -131,8 +126,8 @@
 }
 
 @media (max-width: 360px) {
-  .BoxLogo,
-  .BoxContato {
+  .boxLogo,
+  .boxContato {
     width: 100%;
   }
 }

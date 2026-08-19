@@ -73,6 +73,7 @@
 
   .boxCards {
     display: flex;
+    justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
 
@@ -123,6 +124,7 @@
 
   .boxCardsImpacto {
     display: flex;
+    justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
 
@@ -195,6 +197,8 @@
 
   .sectionMissao,
   .sectionImpacto {
+    width: 100%;
+    margin: 0;
     padding: 3rem 5vw;
 
     .missao,
@@ -213,11 +217,15 @@
 
   .sectionMissao .boxCards,
   .sectionImpacto .boxCardsImpacto {
+    width: 100%;
+    margin: 0;
     gap: 0.75rem;
 
     article {
-      flex-basis: 100%;
+      flex: 0 0 100%;
+      width: 100%;
       max-width: none;
+      margin: 0;
       padding: 1.25rem;
     }
   }
